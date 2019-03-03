@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: #2c3e50;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.select-level {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+#difficulty {
+  width: 15%;
+  height: 7.5%;
+  margin-bottom: 10px;
+}
+
+#start button,
+#endgame button {
+  position: relative;
+  background-color: #f39c12;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 24px;
+
+}
+
+#start button:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #97B1BF;
+  color: #000;
+}
+
+#game,
+#endgame,
+#start {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#endgame {
+  display: none;
+}
+
+
+b {
+  font-size: 30px;
+  font-family: cursive;
+}
+
+#main {
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+}
+
+#main>input {
+  border-radius: 50px;
+}
+
+div[id^="row"]>div {
+  background: #f3f3f3;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+#timer {
+  font-size: 30px;
+  color: #f39c12;
+  text-align: center;
+}
+
+#score {
+  font-size: 30px;
+  margin-bottom: 20px;
+}

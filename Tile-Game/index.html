@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="start">
+        <h2>Follow the Tile</h4>
+            <p class="select-level">Choose a difficulty level:</p>
+            <select id="difficulty">
+                <option value="3">Easy</option>
+                <option value="6">Medium</option>
+                <option value="9">Hard</option>
+            </select>
+
+            <button class="begin" onclick="start()">START</button>
+    </div>
+    <div id="endgame">
+        <p id="highscore"></p>
+        <p id="attempts"></p>
+        <p id="correct"></p>
+        <p id="incorrect"></p>
+        <button onclick="window.location.reload()">Retry</button>
+    </div>
+</body>
+
+</html>
