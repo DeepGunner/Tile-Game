@@ -23,12 +23,12 @@ function start() {
     let rowCount = document.querySelector('#difficulty option:checked').value;
     let colCount = document.querySelector('#difficulty option:checked').value;
 
-    for (var i = 1; i <= rowCount; i++) {
-        var row = document.createElement("div");
+    for (let i = 1; i <= rowCount; i++) {
+        let row = document.createElement("div");
         row.id = "row";
 
-        for (var j = 1; j <= colCount; j++) {
-            var col = document.createElement("div");
+        for (let j = 1; j <= colCount; j++) {
+            let col = document.createElement("div");
             col.className = "tile";
             row.appendChild(col);
         }
@@ -92,7 +92,7 @@ function start() {
             if (divs[i].style.backgroundColor)
                 divs[i].style.backgroundColor = '';
         }
-        var store = divs[Math.floor(Math.random() * (rowCount * colCount))]
+        let store = divs[Math.floor(Math.random() * (rowCount * colCount))]
         store.style.background = 'black'
 
 
